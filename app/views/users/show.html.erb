@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <strong>ID:</strong>
+  <%= @user.id %>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @user.name %>
@@ -8,6 +11,10 @@
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
+</p>
+<p>
+  <strong>Micropost:</strong>
+  <%= @first_micropost.content %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
